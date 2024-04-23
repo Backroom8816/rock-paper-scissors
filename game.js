@@ -18,10 +18,10 @@ console.log("Hello World");
 
 // Get computer choice
     // Math.random() returns a random number between 0 and 0.99
-    // Multiply the generated number by 3 so we expand the range
+    // Multiply the generated number by 3 the range is expanded
     // from 0 to 2,97
     // then Math.floor rounds down the numbers and returns
-    // the largest integers (0, 1, 2), so we get 3 choices
+    // the largest integers (0, 1, 2), getting 3 choices
 
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
@@ -36,3 +36,15 @@ function getComputerChoice() {
 }
 
 console.log(getComputerChoice())
+
+// Get user choice (input)
+    // Ask user to choose between rock, paper or scissor
+    // What if the user inputs an unvalid string?
+        // Make input always lowercase
+
+function getHumanChoice() {
+    let humanChoice = prompt("Choose one: rock, paper or scissor");
+    return humanChoice;
+}
+
+console.log(getHumanChoice());
