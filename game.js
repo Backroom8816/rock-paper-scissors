@@ -106,7 +106,7 @@ function playRound(humanChoice, computerChoice) {
         alert("Computer scores +1 point");
         console.log(computerScore);
 
-    } else (humanChoice == "scissors" && computerChoice == "paper")
+    } else if (humanChoice == "scissors" && computerChoice == "paper")
 
         alert("You win! Scissors beats Paper");
         humanScore++;
