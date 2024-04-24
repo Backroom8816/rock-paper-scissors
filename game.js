@@ -16,6 +16,11 @@ console.log("Hello World");
 // While round counter is smaller than 5, continue game
 // Otherwise stop game
 
+// Declare the player score variables
+
+let computerScore = 0;
+let humanScore = 0;
+
 // Get computer choice
     // Math.random() returns a random number between 0 and 0.99
     // Multiply the generated number by 3 the range is expanded
