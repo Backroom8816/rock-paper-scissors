@@ -1,6 +1,4 @@
 // game.js
-console.log("Hello World");
-
 // Does my program have a user interface? No
 // What inputs has the program? One, user input (Rock, Paper, Scissor)
 // What is the desired output? Number of rounds played and the final result
@@ -35,11 +33,10 @@ function getComputerChoice() {
     } else if (computerChoice == 1) {
         return "paper";
     } else if (computerChoice == 2) {
-        return "scissor";
+        return "scissors";
     }
 }
 
-console.log(getComputerChoice())
 
 // Get user choice (input)
     // Ask user to choose between rock, paper or scissor
@@ -50,8 +47,6 @@ function getHumanChoice() {
     let humanChoice = prompt("Choose one: rock, paper or scissor", "");
     return humanChoice.toLowerCase();
 }
-
-console.log(getHumanChoice());
 
 // Logic to play a single round
     // Compare user's choice vs. computer's choice
@@ -73,49 +68,45 @@ function playRound(humanChoice, computerChoice) {
 
     } else if (humanChoice == "rock" && computerChoice == "paper") {
 
-        alert("You lose! Paper beats Rock");
         computerScore++;
+        alert("You lose! Paper beats Rock");
         alert("Computer scores +1 point");
-        console.log(computerScore);
 
     } else if (humanChoice == "rock" && computerChoice == "scissors") {
 
-        alert("You win! Rock beats Scissors");
         humanScore++;
+        alert("You win! Rock beats Scissors");
         alert("Human scores +1 point");
-        console.log(humanScore);
 
     } else if (humanChoice == "paper" && computerChoice == "rock") {
 
-        alert("You win! Paper beats rock");
         humanScore++;
+        alert("You win! Paper beats rock");
         alert("Human scores +1 point");
-        console.log(humanScore);
 
     } else if (humanChoice == "paper" && computerChoice == "scissors") {
 
-        alert("You lose! Scissors beats Paper");
         computerScore++;
+        alert("You lose! Scissors beats Paper");
         alert("Computer scores +1 point");
-        console.log(computerScore);
 
     } else if (humanChoice == "scissors" && computerChoice == "rock") {
 
-        alert("You lose! Rock beats Scissors");
         computerScore++;
+        alert("You lose! Rock beats Scissors");
         alert("Computer scores +1 point");
-        console.log(computerScore);
 
-    } else if (humanChoice == "scissors" && computerChoice == "paper")
+    } else {
 
-        alert("You win! Scissors beats Paper");
         humanScore++;
+        alert("You win! Scissors beats Paper");
         alert("Human scores +1 point");
-        console.log(humanScore);
+
+    }
 
 }
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-console.log(playRound(humanSelection, computerSelection));
+playRound(humanSelection, computerSelection);
