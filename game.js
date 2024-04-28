@@ -68,43 +68,43 @@ function playGame() {
 
         } else if (humanChoice == "rock" && computerChoice == "paper") {
 
-            alert("You lose! Paper beats Rock");
-            alert("Computer scores +1 point");
+            alert("You lose! Paper beats Rock.");
+            alert("Computer scores +1 point.");
             computerScore++;
             countRound++;
 
         } else if (humanChoice == "rock" && computerChoice == "scissors") {
 
-            alert("You win! Rock beats Scissors");
-            alert("Human scores +1 point");
+            alert("You win! Rock beats Scissors.");
+            alert("Human scores +1 point.");
             humanScore++;
             countRound++;
 
         } else if (humanChoice == "paper" && computerChoice == "rock") {
 
-            alert("You win! Paper beats rock");
-            alert("Human scores +1 point");
+            alert("You win! Paper beats rock.");
+            alert("Human scores +1 point.");
             humanScore++;
             countRound++;
 
         } else if (humanChoice == "paper" && computerChoice == "scissors") {
 
-            alert("You lose! Scissors beats Paper");
-            alert("Computer scores +1 point");
+            alert("You lose! Scissors beats Paper.");
+            alert("Computer scores +1 point.");
             computerScore++;
             countRound++;
 
         } else if (humanChoice == "scissors" && computerChoice == "rock") {
 
-            alert("You lose! Rock beats Scissors");
-            alert("Computer scores +1 point");
+            alert("You lose! Rock beats Scissors.");
+            alert("Computer scores +1 point.");
             computerScore++;
             countRound++;
 
         } else {
 
-            alert("You win! Scissors beats Paper");
-            alert("Human scores +1 point");
+            alert("You win! Scissors beats Paper.");
+            alert("Human scores +1 point.");
             humanScore++;
             countRound++;
 
@@ -150,11 +150,11 @@ function playGame() {
     round5();
 
     if (computerScore > humanScore) {
-        return alert("The computer wins");
+        return alert("The game winner is: Computer.");
     } else if (computerScore < humanScore) {
-        return alert("The human wins");
+        return alert("The game winner is: Human.");
     } else {
-        return alert("It's a draw");
+        return alert("The game ended with a draw.");
     }
 
 }
