@@ -148,6 +148,15 @@ function playGame() {
     round3();
     round4();
     round5();
+
+    if (computerScore > humanScore) {
+        return alert("The computer wins");
+    } else if (computerScore < humanScore) {
+        return alert("The human wins");
+    } else {
+        return alert("It's a draw");
+    }
+
 }
 
 playGame();
