@@ -28,8 +28,9 @@ function getComputerChoice() {
         // Make input always lowercase?
 
 function getHumanChoice() {
-    let humanChoice = prompt("Choose one: rock, paper or scissors", "");
-    return humanChoice.toLowerCase();
+    let humanChoice = prompt("Choose one: rock, paper or scissors", "").toLowerCase();
+    return humanChoice;
+
 }
 
 // Logic to play the entire game
