@@ -30,12 +30,14 @@ function getComputerChoice() {
 function getHumanChoice() {
     let humanChoice = prompt("Choose one: rock, paper or scissors", "").toLowerCase();
 
-    // Check validity of user input
-    if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
-        return humanChoice; 
-    } else {
-        alert("Bad input. Try again.")
-        return getHumanChoice(); // Return result of recursive call
+    switch (humanChoice) {
+        case "rock":
+        case "paper":
+        case "scissors":
+            return humanChoice;
+        default:
+            alert("Bad input. Try again.")
+            return getHumanChoice(); // Return result of recursive call
     }
 }
 
