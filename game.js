@@ -25,12 +25,18 @@ function getComputerChoice() {
 // Get user choice (input)
     // Ask user to choose between rock, paper or scissor
     // What if the user inputs an unvalid string?
-        // Make input always lowercase?
+        // Make input always lowercase
 
 function getHumanChoice() {
     let humanChoice = prompt("Choose one: rock, paper or scissors", "").toLowerCase();
-    return humanChoice;
 
+    // Check validity of user input
+    if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
+        return humanChoice; 
+    } else {
+        alert("Bad input. Try again.")
+        return getHumanChoice(); // Return result of recursive call
+    }
 }
 
 // Logic to play the entire game
